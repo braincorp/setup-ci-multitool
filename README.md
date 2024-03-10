@@ -18,6 +18,6 @@ jobs:
     steps:
       - uses: alexgartner-bc/setup-ci-multitool@main
         with:
-          version: 0.8.0
+          version: 0.0.8
       - run: ci-multitool -h
 ```
