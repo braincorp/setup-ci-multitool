@@ -8,8 +8,7 @@ on:
       - main
 
 jobs:
-  run-action:
-    name: Run action
+  test-build:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,6 +26,16 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Run my action
+        uses: ./
+
+      - run: ci-multitool -h
+  test-dist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
 
       - name: Run my action
         uses: ./
