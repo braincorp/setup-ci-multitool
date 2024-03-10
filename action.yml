@@ -4,9 +4,9 @@ description: "Setup ci-multitool"
 
 inputs:
   version:
-    description: 'version'
+    description: "version"
     required: true
-    default: 'v0.8.0'
+    default: "0.0.8"
 runs:
   using: "node20"
   main: "dist/index.js"
