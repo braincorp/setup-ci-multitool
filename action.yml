@@ -1,0 +1,12 @@
+name: "Setup ci-multitool"
+author: "Alex Gartner"
+description: "Setup ci-multitool"
+
+inputs:
+  version:
+    description: 'version'
+    required: true
+    default: 'v0.8.0'
+runs:
+  using: "node20"
+  main: "dist/index.js"
