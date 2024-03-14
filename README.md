@@ -1,6 +1,6 @@
 # setup-ci-multitool
 
-Installs [ci-multitool](https://github.com/alexgartner-bc/ci-multitool) in github actions.
+Installs [ci-multitool](https://github.com/braincorp/ci-multitool) in github actions.
 
 ## Example:
 
@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: alexgartner-bc/setup-ci-multitool@main
+      - uses: braincorp/setup-ci-multitool@main
         with:
-          version: 0.0.8
+          version: 0.0.13
       - run: ci-multitool -h
 ```

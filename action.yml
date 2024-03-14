@@ -6,7 +6,7 @@ inputs:
   version:
     description: "version"
     required: true
-    default: "0.0.8"
+    default: "0.0.13"
 runs:
   using: "node20"
   main: "dist/index.js"

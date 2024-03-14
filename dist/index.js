@@ -23,7 +23,7 @@ const core = __importStar(require("@actions/core"));
 const tc = __importStar(require("@actions/tool-cache"));
 async function run() {
     const version = core.getInput('version');
-    const downloadUrl = `https://github.com/alexgartner-bc/ci-multitool/releases/download/v${version}/ci-multitool_${version}_linux_amd64.tar.gz`;
+    const downloadUrl = `https://github.com/braincorp/ci-multitool/releases/download/v${version}/ci-multitool_${version}_linux_amd64.tar.gz`;
     core.info(`Downloading ci-multitool from ${downloadUrl}`);
     const localPath = await tc.downloadTool(downloadUrl);
     const extractedPath = await tc.extractTar(localPath);
